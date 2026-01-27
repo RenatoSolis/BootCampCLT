@@ -1,0 +1,41 @@
+# Java / general
+**/.classpath
+**/.project
+**/.settings
+
+# Node / frontend
+**/node_modules
+**/npm-debug.log
+**/yarn-debug.log
+**/yarn-error.log
+
+# Environment
+**/.env
+
+# Git
+**/.git
+**/.gitignore
+
+# VS / VS Code
+**/.vs
+**/.vscode
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
+
+# Build outputs
+**/bin
+**/obj
+
+# Docker
+**/docker-compose*
+**/Dockerfile*
+
+# OS files
+**/.DS_Store
+**/Thumbs.db
+
+# Docs
+LICENSE
+README.md

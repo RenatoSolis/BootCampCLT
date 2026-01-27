@@ -1,0 +1,8 @@
+﻿apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bootcamp-api-env
+data:
+  ASPNETCORE_ENVIRONMENT: "Development"
+  ASPNETCORE_URLS: "http://+:8080"
+  AppName: {{ .Values.app.applicationName}}
