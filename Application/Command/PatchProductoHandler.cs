@@ -19,7 +19,7 @@ namespace BootcampCLT.Application.Command
             var producto = await _context.Productos
                 .FirstOrDefaultAsync(p => p.Id == request.Id, cancellationToken);
 
-            if (producto == null) return null;
+            if (producto == null) return null!;
 
             // Solo actualizamos si el campo viene en el request
             if (request.Codigo != null) producto.Codigo = request.Codigo;

@@ -99,7 +99,7 @@ namespace BootcampCLT.Api
             {
                 _logger.LogInformation("Intentando crear producto con Código={Codigo}", request.Codigo);
                 var command = new CreateProductoCommand(
-                    request.Codigo, request.Nombre, request.Descripcion,
+                    request.Codigo, request.Nombre, request.Descripcion ?? string.Empty,
                     request.Precio, request.Activo, request.CategoriaId
                 );
 
@@ -132,7 +132,7 @@ namespace BootcampCLT.Api
             {
                 _logger.LogInformation("Actualizando ProductoId={ID}", id);
                 var command = new UpdateProductoCommand(
-                    id, request.Codigo, request.Nombre, request.Descripcion,
+                    id, request.Codigo, request.Nombre, request.Descripcion ?? string.Empty,
                     request.Precio, request.Activo, request.CategoriaId
                 );
 
